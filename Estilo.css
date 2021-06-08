@@ -1,0 +1,98 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+button{
+background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.calculadora{
+    width: 240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calculadora span{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #eee ;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
+}
+
+.calculadora span:hover{
+    cursor: pointer;
+}
+.calculadora .Operacion{
+    background: #393e46;
+    color: azure;
+}
+
+.calculadora .Limpiar{
+    background: #fd7272 ;
+    color: #fff;  
+}
+
+.calculadora .AreaDeEntrada{
+    grid-column: span 4;
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+}
+
+.calculadora .mas{
+    grid-row: span 2 ;
+    height: 120px;
+    line-height: 120px;
+}
+.calculadora .igual{
+    width: 120px;
+    grid-column: span 2;
+    background: #2bacd4;
+    font-size: 1.8em;
+}
+
+#Historial{
+    width: 240px;
+    height: 365px;
+    overflow: scroll;
+    font-size: 1.1em;
+    background: rgb(62, 150, 250);
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+#Historial::-webkit-scrollbar{
+    width: 0;
+}
+
+#Historial h3{
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+#Historial p:last-child{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #eee;
+}
